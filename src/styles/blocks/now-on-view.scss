@@ -75,6 +75,12 @@
 
   &__link{
     position: relative;
+    transition-duration: $anim-duration;
+
+    &:hover{
+      transform: scale(1.2);
+      z-index: 2;
+    }
 
     &--wide{
       @include on-tablet{

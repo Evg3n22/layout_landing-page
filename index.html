@@ -33,7 +33,16 @@
               class="top-bar__logo">
             </a>
             <div class="top-bar__icons">
-              <a href="#" class="icon icon--phone"></a>
+              <div class="phones-info" id="phones-info">
+                <p class="phones-info__title">The Met Fifth Avenue</p>
+                <a href="tel:+1 212-535-7710"
+                class="phones-info__phone">+1 212-535-7710</a>
+                <p class="phones-info__title">The Met Cloisters</p>
+                <a href="tel:+1 212-923-3700"
+                class="phones-info__phone">+1 212-923-3700</a>
+              </div>
+
+              <a href="#phones-info" class="icon icon--phone"></a>
               <a href="#menu" class="icon icon--menu"></a>
             </div>
           </div>
@@ -251,19 +260,19 @@
               <div class="contact">
                 <p class="contact__title__block">The Met Fifth Avenue</p>
                 <p class="contact__title">Phone</p>
-                <p class="contact__title__content">+1 212-535-7710</p>
+                <a href="tel:+1 212-535-7710" class="contact__title__content">+1 212-535-7710</a>
                 <p class="contact__title">Address</p>
-                <p class="contact__title__content">1000 Fifth Avenue New York, NY 10028</p>
+                <address class="contact__title__content">1000 Fifth Avenue New York, NY 10028</address>
               </div>
               <div class="contact">
                 <p class="contact__title__block">The Met Cloisters</p>
                 <p class="contact__title">Phone</p>
-                <p class="contact__title__content">+1 212-923-3700</p>
+                <a href="tel:+1 212-923-3700" class="contact__title__content">+1 212-923-3700</a>
                 <p class="contact__title">Address</p>
-                <p class="contact__title__content">99 Margaret Corbin Drive Fort Tryon Park New York, NY 10040</p>
+                <address class="contact__title__content">99 Margaret Corbin Drive Fort Tryon Park New York, NY 10040</address>
               </div>
               <div class="contact contact-form">
-                <form class="contact__form">
+                <form class="contact__form" onsubmit="this. reset(); return false;">
                   <input type="text" class="contact__form__input contact__form-textbox"
                   placeholder="Name">
                   <input type="email" class="contact__form__input contact__form-textbox"

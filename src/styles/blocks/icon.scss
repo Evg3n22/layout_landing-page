@@ -22,5 +22,27 @@
   }
 }
 
+.phones-info{
+  display: none;
+  color: #fff;
+
+  // @include on-desktop{
+  //   &:target{
+  //     display: block;
+  //   }
+  // }
+
+  &__title{
+    margin:0;
+  }
+
+  &__phone{
+    margin: 0;
+    margin-bottom: 8px;
+    text-decoration: none;
+    color:#fff;
+  }
+}
+
 
 /* #endregion */

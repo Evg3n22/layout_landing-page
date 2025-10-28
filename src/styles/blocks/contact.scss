@@ -1,5 +1,7 @@
 .contacts {
   @include page-grid;
+
+  font-family: Cinzel, 'Times New Roman', Times, serif;
 }
 
 .contact {
@@ -27,6 +29,7 @@
   &__title {
     margin: 8px 0 0;
 
+
     &__block {
       font-weight: 700;
       font-style: Bold;
@@ -40,10 +43,13 @@
     &__content {
       margin: 0 0 4px;
       font-weight: 700;
-      font-style: Bold;
+      font-style: normal;
       font-size: 16px;
       line-height: 140%;
       letter-spacing: 0;
+
+      text-decoration: none;
+      color:$main-text-color;
     }
   }
   &__form {
@@ -57,12 +63,12 @@
 
     &__textarea {
       height: 144px;
+      resize: none;
     }
 
     &-textbox {
       box-sizing: border-box;
 
-      font-family: Cinzel 'Times New Roman';
       font-weight: 400;
       font-style: Regular;
       font-size: 14px;
