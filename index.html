@@ -262,23 +262,30 @@
                 <p class="contact__title">Phone</p>
                 <a href="tel:+1 212-535-7710" class="contact__title__content">+1 212-535-7710</a>
                 <p class="contact__title">Address</p>
-                <address class="contact__title__content">1000 Fifth Avenue New York, NY 10028</address>
+                <a href="https://maps.app.goo.gl/2UsaDZNKxe5H6Bj26" class="contact__title__content">1000 Fifth Avenue New York, NY 10028</a>
               </div>
               <div class="contact">
                 <p class="contact__title__block">The Met Cloisters</p>
                 <p class="contact__title">Phone</p>
                 <a href="tel:+1 212-923-3700" class="contact__title__content">+1 212-923-3700</a>
                 <p class="contact__title">Address</p>
-                <address class="contact__title__content">99 Margaret Corbin Drive Fort Tryon Park New York, NY 10040</address>
+                <a href="https://maps.app.goo.gl/xkktJPGARUvBSAD1A" class="contact__title__content">99 Margaret Corbin Drive Fort Tryon Park New York, NY 10040</a>
               </div>
               <div class="contact contact-form">
-                <form class="contact__form" onsubmit="this. reset(); return false;">
-                  <input type="text" class="contact__form__input contact__form-textbox"
+                <form class="contact__form">
+                  <input name="contact__form-input"  type="text"
+                  required class="contact__form__input contact__form-textbox"
                   placeholder="Name">
-                  <input type="email" class="contact__form__input contact__form-textbox"
+
+                  <input name="contact__form-input" type="email"
+                  required class="contact__form__input contact__form-textbox"
                   placeholder="Email">
-                  <textarea class="contact__form__textarea contact__form-textbox" placeholder="Message"></textarea>
-                  <a href="#" class="contact__form__button btn-primary">Send</a>
+
+                  <textarea required name="contact__form-input"
+                  class="contact__form__textarea contact__form-textbox" placeholder="Message"></textarea>
+
+                  <button type="submit"
+                  class="contact__form__button btn-primary">Send</button>
                 </form>
               </div>
             </div>
