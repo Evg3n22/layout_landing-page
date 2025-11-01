@@ -26,12 +26,6 @@
   display: none;
   color: #fff;
 
-  // @include on-desktop{
-  //   &:target{
-  //     display: block;
-  //   }
-  // }
-
   &__title{
     margin:0;
   }
@@ -40,7 +34,19 @@
     margin: 0;
     margin-bottom: 8px;
     text-decoration: none;
+    text-align: right;
     color:#fff;
+  }
+}
+
+.phone-wrapper:hover .phones-info {
+  display: block;
+  position: absolute;
+  right: 30%;
+  top:10px;
+
+  @include on-tablet{
+    right:25%;
   }
 }
 

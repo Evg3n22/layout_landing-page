@@ -1,7 +1,7 @@
 .contacts {
   @include page-grid;
 
-  font-family: Cinzel, 'Times New Roman', Times, serif;
+  // font-family: Cinzel, 'Times New Roman', Times, serif;
 }
 
 .contact {
@@ -78,6 +78,7 @@
       padding: 14px 11px;
       color: $main-text-color;
       transition-duration: $anim-duration;
+
 
       &:hover {
         &::placeholder {

@@ -25,15 +25,6 @@
       gap: 50px;
     }
   }
-
-  &:hover .phones-info{
-      display: block;
-      position: absolute;
-      right: 30%;
-      top:10px;
-
-      @include on-tablet{
-        right:25%;
-      }
-    }
 }
+
+
