@@ -20,6 +20,12 @@
   &--close{
     background-image: url(../images/icons/icon-close.png);
   }
+
+  transition-duration: $anim-duration;
+  
+  &:hover {
+    transform: scale($hover-icon-scale);
+  }
 }
 
 .phones-info{
